@@ -93,7 +93,11 @@ class LoginPage extends StatelessWidget {
                 children: [
                   Image.asset("assets/images/main_avatar.png",
                       width: 25, height: 25),
-                  const Text("Login with facebook")
+                  const Text("Login with facebook", 
+                  style: TextStyle(
+                    //fontWeight: FontWeight.bold,
+                    fontFamily: 'Agbalumo'
+                  ))
                 ],
               )),
           Row(
