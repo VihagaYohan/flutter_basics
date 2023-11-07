@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_playground/pages/home_page.dart';
 import 'package:flutter_playground/styles/app_colors.dart';
 
 // pages
 import './pages/login_page.dart';
 import './widgets/scaffold.dart';
+
+// course work
+import './course_work/basic_layout.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,11 +22,16 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-        scaffoldBackgroundColor: AppColors.primary
-      ),
+          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+          useMaterial3: true,
+          scaffoldBackgroundColor: AppColors.primary),
       home: LoginPage(),
+      initialRoute: '/login',
+      routes: {
+        '/login': (context) => LoginPage(),
+        '/home': (context) => HomePage()
+      },
+      debugShowCheckedModeBanner: false,
     );
   }
 }
