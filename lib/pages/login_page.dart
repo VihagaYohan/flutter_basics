@@ -76,6 +76,10 @@ class LoginPage extends StatelessWidget {
                             /* option 2 
                             Navigator.of(context).pushNamed('/home'); 
                             */
+
+                            /* option 3 
+                            Navigator.of(context).pushReplacementNamed('/home'); 
+                            */
                           },
                           style: ElevatedButton.styleFrom(
                               backgroundColor: Colors.amber,
