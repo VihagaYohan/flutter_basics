@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_playground/pages/home_page.dart';
+import 'package:flutter_playground/pages/main_page.dart';
 import 'package:flutter_playground/styles/app_colors.dart';
 
 // pages
@@ -29,7 +30,8 @@ class MyApp extends StatelessWidget {
       initialRoute: '/login',
       routes: {
         '/login': (context) => LoginPage(),
-        '/home': (context) => HomePage()
+        '/home': (context) => HomePage(),
+        '/main': (context) => MainPage(),
       },
       debugShowCheckedModeBanner: false,
     );

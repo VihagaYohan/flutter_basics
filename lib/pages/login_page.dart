@@ -1,6 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_playground/pages/home_page.dart';
+import 'package:flutter_playground/pages/main_page.dart';
 
 class LoginPage extends StatelessWidget {
   @override
@@ -69,7 +70,7 @@ class LoginPage extends StatelessWidget {
                             // option 1
                             Navigator.of(context).push(MaterialPageRoute(
                               builder: (context) {
-                                return HomePage();
+                                return MainPage();
                               },
                             ));
 
