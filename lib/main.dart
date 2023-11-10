@@ -25,7 +25,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
-          scaffoldBackgroundColor: AppColors.primary),
+          scaffoldBackgroundColor: AppColors.primary,
+          brightness: Brightness.light),
       home: LoginPage(),
       initialRoute: '/login',
       routes: {

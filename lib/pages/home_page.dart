@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_playground/components/post_item.dart';
 import 'package:flutter_playground/styles/app_colors.dart';
+import 'package:flutter_playground/styles/app_text.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -20,7 +22,7 @@ class HomePage extends StatelessWidget {
       children: [
         Image.asset('assets/temp/main_avatar.png', width: 40, height: 40),
         const SizedBox(width: 10),
-        const Text("List item")
+        const Text("List item", style: AppText.body1)
       ],
     );
   }
@@ -28,7 +30,7 @@ class HomePage extends StatelessWidget {
   List<Widget> mockUsersFromServer() {
     List<Widget> users = [];
     for (var i = 0; i < 1000; i++) {
-      users.add(_userItem());
+      users.add(PostItem());
     }
     return users;
   }
